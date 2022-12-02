@@ -37,6 +37,7 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get install -y \
   lsb-release \
   software-properties-common \
+  clang-format \
   gnupg
 
 RUN wget -O llvm.sh https://apt.llvm.org/llvm.sh \
