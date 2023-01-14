@@ -18,7 +18,7 @@ jobs:
   docker-debian:
    runs-on: self-hosted
    steps:
-     - uses: shaw1025/test@main
+     - uses: shaw1025/test/.github/workflows/build_and_test.yml@main
      - name: Build container image
        run: docker build -t fhe-debian -f docker/debian-bullseye.Dockerfile .
      - name: Run tests inside the container
