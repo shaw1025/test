@@ -1,0 +1,10 @@
+name: 'Default Builder'
+description: 'A custom GitHub actions pipeline that wrappedup build, unit_test, benchmark and extract stages'
+
+runs:
+  #
+  using: "composite"
+  steps:
+    - name: "test...."
+      run: echo "------------------"
+      
