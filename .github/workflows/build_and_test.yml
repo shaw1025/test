@@ -8,7 +8,7 @@ on:
 
 jobs:
   docker-ubuntu:
-   runs-on: [self-hosted, macOS, x64]
+   runs-on: self-hosted
    steps:
      - uses: actions/checkout@v3
      - name: Build container image
@@ -16,7 +16,7 @@ jobs:
      - name: Run tests inside the container
        run: docker run fhe-ubuntu 'bazel test ...:all'
   docker-debian:
-   runs-on: [self-hosted, macOS, x64]
+   runs-on: self-hosted
    steps:
      - uses: actions/checkout@v3
      - name: Build container image
