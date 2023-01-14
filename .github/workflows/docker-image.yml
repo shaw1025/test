@@ -13,6 +13,6 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - uses: shaw1025/test/checkout@main
+    - uses: shaw1025/actions/test@main
     - name: Build the Docker image
       run: docker build -t fhe-ubuntu -f docker/ubuntu-jammy.Dockerfile .
